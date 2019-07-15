@@ -1,0 +1,30 @@
+<view>
+  <view class='row'>
+    <label class='title'>我的地址</label>
+    <view class='info'>{{address}}</view>
+  </view>
+  <view class='row'>
+    <label class='title'>类型</label>
+    <view class='info'>
+      {{type=="sell" ? "出售": "求购"}}
+      <!-- <radio-group bindchange="handleTypeChange">
+        <label>
+          <radio value="buy" checked="{{type == 'buy'}}"/>求购
+          <radio value="sell" checked="{{type == 'sell'}}"/>转让
+        </label>
+      </radio-group> -->
+    </view>
+  </view>
+  <view class='row'>
+    <label class='title'>说明</label>
+    <view class='info'>
+      {{message}}
+    </view>
+  </view>
+  <view class='row'>
+    <label class='title'>联系方式</label>
+    <view class='info'>
+      {{contact}}
+    </view>
+  </view>
+</view>
